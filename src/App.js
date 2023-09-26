@@ -1,9 +1,12 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import GlobalStyle from "./styles/global";
 
 function App() {
   return (
     <>
-      <h1>foda</h1>
+      <Header />
+      <Hero />
       <GlobalStyle />
     </>
   );
