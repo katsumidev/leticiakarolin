@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -9,6 +9,16 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 999;
+  transition: all .2s;
+
+  ${(props) => props.isFixed && css`
+    height: 80px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  `}
 
   .title {
     font-family: "LaLuxesScript", sans-serif !important;
@@ -21,6 +31,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     gap: 10px;
+
+    svg {
+      cursor: pointer;
+    }
   }
 
   ul {
@@ -33,11 +47,17 @@ export const Container = styled.div`
     font-weight: 900;
     font-family: 'Brandon Bold';
 
+    :hover {
+        transform: scale(1.1);
+        margin: 0 30px;
+      }
+
     li {
       cursor: pointer;
       padding: 0px;
       margin: 0px;
       height: fit-content;
+      transition: all .2s;
     }
   }
 `;

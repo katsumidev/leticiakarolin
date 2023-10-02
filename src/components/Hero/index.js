@@ -11,9 +11,8 @@ import mainPic from "../../assets/img/personal5.jpeg";
 function Hero() {
   return (
     <Container>
-      {/* <HeroBackground /> */}
+     
       <PictureWrapper>
-
         <MainPicture>
           <img src={mainPic} />
           <div className="back"/>
@@ -21,8 +20,9 @@ function Hero() {
         <div className="main-titles">
           <h1>Olá, Tudo bem?</h1>
           <h3>Sou uma psicologa e terapeuta</h3>
-          <h2>Ajudando familias a se reconciliarem e ajudando milhares de pessoas toda semana!</h2>
+          <h2>Ajudando familias a se reconciliarem e ajudando centenas de pessoas toda semana!</h2>
         </div>
+        <HeroBackground />
       </PictureWrapper>
       <div className="main-background">
       </div>

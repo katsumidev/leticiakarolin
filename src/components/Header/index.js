@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillFacebook, AiFillInstagram, AiFillHeart } from "react-icons/ai";
 import { Container } from "./styles";
 
 function Header() {
+  const [isFixed, setFixed] = useState(false);
+
+  if (typeof window !== "undefined") {
+    function setHeaderFixed() {
+      if (window.scrollY >= 1) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    }
+
+    window.addEventListener("scroll", setHeaderFixed);
+  }
+
   return (
-    <Container>
+    <Container isFixed={isFixed}>
       <p className="title">Leticia Psicologia</p>
       <ul>
         <li>Sobre mim</li>

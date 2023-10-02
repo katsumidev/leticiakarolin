@@ -50,6 +50,5 @@ export default createGlobalStyle`
     body {
         font-family: 'Brandon Light', sans-serif;
         overflow-x: hidden;
-        color: #5B5756;
     }
 `;

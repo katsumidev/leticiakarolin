@@ -2,7 +2,7 @@ import styled from "styled-components";
 import heroBackground from "../../assets/img/hero-background.jpg"
 
 export const Container = styled.div`
-    margin-top: 40px;
+    margin-top: 130px;
 
     .main-titles {
         display: flex;
@@ -17,7 +17,8 @@ export const Container = styled.div`
         h3 {
             text-transform: uppercase;
             font-size: 15pt;
-            font-weight: 700;
+            font-weight: 900;
+            color: #000;
         }
 
         h2 {
@@ -32,6 +33,7 @@ export const Container = styled.div`
 export const MainPicture = styled.div`
     width: 30%;
     position: relative;
+    z-index: 1;
 
     .back {
         background-color: #84b59f;
@@ -39,8 +41,8 @@ export const MainPicture = styled.div`
         height: 110%;
         position: absolute;
         left: -250%;
-        top: -70px;
         z-index: -1;
+        bottom: 0;
     }
 
     img {
@@ -50,7 +52,6 @@ export const MainPicture = styled.div`
 
 export const PictureWrapper = styled.div`
     width: 100%;
-    height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -58,8 +59,19 @@ export const PictureWrapper = styled.div`
     justify-content: flex-start;
     gap: 15%;
     margin: 0 100px;
-    background-color: #eae0d5;
-    padding: 40px 0;
-    z-index: -1;
+    z-index: 2;
 
+`
+
+export const HeroBackground = styled.div`
+    width: 100%;
+    height: 97%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(${heroBackground});
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
 `
