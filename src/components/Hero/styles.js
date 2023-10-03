@@ -2,7 +2,7 @@ import styled from "styled-components";
 import heroBackground from "../../assets/img/hero-background.jpg"
 
 export const Container = styled.div`
-    margin-top: 130px;
+    margin-top: 200px;
 
     .main-titles {
         display: flex;
@@ -18,7 +18,7 @@ export const Container = styled.div`
             text-transform: uppercase;
             font-size: 15pt;
             font-weight: 900;
-            color: #000;
+            color: #202120;
         }
 
         h2 {
@@ -34,19 +34,21 @@ export const MainPicture = styled.div`
     width: 30%;
     position: relative;
     z-index: 1;
+    display: flex;
 
     .back {
-        background-color: #84b59f;
+        background-color: #202120;
         width: 100vw;
-        height: 110%;
+        height: 115%;
         position: absolute;
         left: -250%;
         z-index: -1;
-        bottom: 0;
+        bottom: -25px;
     }
 
     img {
         width: 100%;
+        border: 8px solid #F8F4EF;
     }
 `
 
@@ -65,13 +67,27 @@ export const PictureWrapper = styled.div`
 
 export const HeroBackground = styled.div`
     width: 100%;
-    height: 97%;
+    height: 105%;
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     left: 0;
     background-image: url(${heroBackground});
     background-position: center;
     background-size: cover;
     opacity: 0.4;
     z-index: -1;
+`
+
+export const LearnBtn = styled.div`
+    width: 300px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #202120;
+    text-align: center;
+    font-weight: 500;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    font-size: 13pt;
+    cursor: pointer;
 `

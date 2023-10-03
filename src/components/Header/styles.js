@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: #fff;
+  background-color: transparent;
   top: 0;
   z-index: 999;
   transition: all .2s;
@@ -18,6 +18,7 @@ export const Container = styled.div`
   ${(props) => props.isFixed && css`
     height: 80px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    background-color: #fff;
   `}
 
   .title {

@@ -5,6 +5,7 @@ import {
   MainPicture,
   PictureWrapper,
   HeroBackground,
+  LearnBtn
 } from "./styles";
 import mainPic from "../../assets/img/personal5.jpeg";
 
@@ -21,6 +22,7 @@ function Hero() {
           <h1>Olá, Tudo bem?</h1>
           <h3>Sou uma psicologa e terapeuta</h3>
           <h2>Ajudando familias a se reconciliarem e ajudando centenas de pessoas toda semana!</h2>
+          <LearnBtn>Saiba Mais</LearnBtn>
         </div>
         <HeroBackground />
       </PictureWrapper>

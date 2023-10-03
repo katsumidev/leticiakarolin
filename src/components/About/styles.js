@@ -8,6 +8,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   justify-content: space-between;
+  margin-top: 80px;
 `;
 
 export const Background = styled.div`
@@ -29,6 +30,7 @@ export const FrontImg = styled.div`
     background-image: url(${personal6});
     background-position: center;
     background-size: cover;
+    border: 8px solid #F8F4EF;
 `
 
 export const MainWrapper = styled.div`
