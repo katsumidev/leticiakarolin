@@ -1,6 +1,8 @@
 import About from "./components/About";
+import ContactForm from "./components/ContactForm";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import InstagramPosts from "./components/InstagramPosts";
 import QuoteRow from "./components/QuoteRow";
 import SelfCareRow from "./components/SelfCareRow";
 import Services from "./components/Services";
@@ -15,6 +17,8 @@ function App() {
       <SelfCareRow />
       <Services />
       <QuoteRow />
+      <InstagramPosts />
+      <ContactForm />
       <GlobalStyle />
     </>
   );

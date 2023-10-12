@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <Container isFixed={isFixed}>
-      <p className="title">Leticia Psicologia</p>
+      <p className="title">Leticia Karoline</p>
       <ul>
         <li>Sobre mim</li>
         <li>Serviços</li>

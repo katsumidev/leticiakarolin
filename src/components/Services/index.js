@@ -16,24 +16,23 @@ function Services() {
     <FullWrapper>
       <Container>
         <LeftWrapper>
-          <h1 className="written-title">Solução de Problemas</h1>
+          <h1 className="written-title">Análise Transacional</h1>
           <p>
-            Eye Movement Desensitization and Reprocessing (EMDR) is an
-            integrative psychotherapy approach that has been extensively
-            researched and proven effective for the treatment of trauma. EMDR
-            therapy is a set of standardized protocols that incorporates
-            elements from many different treatment approaches. To learn more,
-            visit www.emdria.org.
+            A Análise Transacional (AT) é uma abordagem prática e humanista que
+            explora a personalidade, desenvolvimento humano, comunicação e
+            relacionamentos.
           </p>
-
           <p>
-            EMDR therapy has been declared an effective form of trauma treatment
-            by a wide range of organizations. In the United States, these
-            include the American Psychiatric Association, the International
-            Society for Traumatic Stress Studies, the Departments of Defense and
-            Veterans Affairs and the World Health Organization.
+            Acreditamos que as pessoas têm o potencial para o bem-estar e
+            relacionamentos saudáveis, baseados em princípios como a crença de
+            que somos inerentemente capazes de nos sentir bem, a importância de
+            relações contratuais, autonomia e a capacidade de identificar e
+            mudar padrões de pensamento, sentimentos e comunicação.
           </p>
-
+          <p>
+            Se busca relacionamentos saudáveis, comunicação eficaz e bem-estar
+            pessoal, a AT pode ser o caminho. Vamos começar?
+          </p>
           <div className="line" />
 
           <MainImg />
@@ -42,22 +41,27 @@ function Services() {
           <Title title="Meus serviços" position="02" />
           <SecundaryImg />
           <TertiaryImg />
-          <h1 className="written-title">Tratamento Paleativo</h1>
+          <h1 className="written-title">Psicoterapia</h1>
 
           <p>
-            EMDR therapy has been declared an effective form of trauma treatment
-            by a wide range of organizations. In the United States, these
-            include the American Psychiatric Association, the International
-            Society for Traumatic Stress Studies, the Departments of Defense and
-            Veterans Affairs and the World Health Organization.
+            A Psicoterapia é uma jornada multifacetada repleta de objetivos e
+            recompensas. É uma oportunidade de desenvolver habilidades para
+            lidar consigo mesmo e com os outros, promovendo o autoconhecimento e
+            desencadeando mudanças em comportamentos disfuncionais.
           </p>
 
           <p>
-            EMDR therapy has been declared an effective form of trauma treatment
-            by a wide range of organizations. In the United States, these
-            include the American Psychiatric Association, the International
-            Society for Traumatic Stress Studies, the Departments of Defense and
-            Veterans Affairs and the World Health Organization.
+            O processo terapêutico é um convite caloroso para explorar o seu
+            potencial, ajudando-o a enfrentar traumas, medos, culpas, lutos e
+            muitas outras questões que afetam nossa jornada na vida.
+          </p>
+
+          <p>
+            Meu trabalho é dedicado a indivíduos que desejam embarcar nessa
+            profunda jornada de autodescoberta. É uma honra ter a oportunidade
+            de conhecer e acompanhar histórias diversas e cheias de significado.
+            Vamos começar a sua jornada rumo ao bem-estar e à compreensão de si
+            mesmo?
           </p>
           <div className="line" />
         </RightWrapper>

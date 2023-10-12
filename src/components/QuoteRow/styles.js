@@ -12,6 +12,8 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 30px;
     z-index: 999;
+    position: relative;
+    margin-bottom: 40px;
 
     p {
         font-weight: 900;
@@ -27,3 +29,15 @@ export const Container = styled.div`
         font-weight: 500;
     }
 `;
+
+export const ContactBtn = styled.div`
+    position: absolute;
+    bottom: -30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #402826;
+    width: 350px;
+    padding: 20px;
+    font-weight: 900;
+    cursor: pointer;
+`

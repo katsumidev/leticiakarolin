@@ -12,7 +12,7 @@ export const Container = styled.div`
   position: fixed;
   background-color: transparent;
   top: 0;
-  z-index: 999;
+  z-index: 999999;
   transition: all .2s;
 
   ${(props) => props.isFixed && css`
