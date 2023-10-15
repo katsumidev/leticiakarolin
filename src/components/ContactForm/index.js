@@ -9,6 +9,7 @@ import {
   Input,
   Form,
   DoubleRow,
+  SendMsgBtn
 } from "./styles";
 import Title from "../Title";
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
@@ -64,14 +65,19 @@ function ContactForm() {
           </DoubleRow>
 
           <Input>
-            <p>Email</p>
-            <input type="text" placeholder="Seu Endereço de Email"/>
+            <p>Qual a cidade e país você mora atualmente?*</p>
+            <input type="text" placeholder="Ex: São Paulo - SP"/>
           </Input>
 
           <Input>
-            <p>Email</p>
-            <input type="text" placeholder="Seu Endereço de Email"/>
+            <p>Alguma observação sobre sua disponibilidade de horários?</p>
+            <textarea placeholder="..."/>
           </Input>
+
+          <SendMsgBtn>
+            Enviar Mensagem
+          </SendMsgBtn>
+
         </Form>
       </RightContainer>
     </Container>

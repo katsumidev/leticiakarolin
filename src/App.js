@@ -1,5 +1,6 @@
 import About from "./components/About";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import InstagramPosts from "./components/InstagramPosts";
@@ -19,6 +20,7 @@ function App() {
       <QuoteRow />
       <InstagramPosts />
       <ContactForm />
+      <Footer />
       <GlobalStyle />
     </>
   );

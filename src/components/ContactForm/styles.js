@@ -4,10 +4,9 @@ import aesthetic_3 from "../../assets/img/aesthetic_six.jpg";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 100px 0;
+  margin: 200px 0;
   width: 100vw;
   height: 100vh;
-  margin-top: 200px;
 `;
 
 export const LeftContainer = styled.div`
@@ -26,7 +25,7 @@ export const LeftContainer = styled.div`
     background-size: cover;
     opacity: 0.7;
     z-index: -1;
-    height: 103%;
+    height: 113%;
     position: absolute;
     top: 0;
     left: 0;
@@ -39,13 +38,14 @@ export const RightContainer = styled.div`
   width: 50%;
   justify-content: flex-start;
   align-items: center;
+  height: 120%;
 `;
 
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
   width: 70%;
-  gap: 20px;
+  gap: 50px;
 `;
 
 export const Input = styled.div`
@@ -64,6 +64,18 @@ export const Input = styled.div`
     border: none;
     background-color: transparent;
     border-bottom: 2px solid #000;
+  }
+
+  textarea {
+    padding: 15px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    height: 100px;
+    max-height: 100px;
+    max-width: 100%;
   }
 `;
 
@@ -104,9 +116,20 @@ export const Infos = styled.ul`
 export const Image = styled.div`
   width: 120%;
   height: 70vh;
-  border: 10px solid #f8f4ef;
   background-image: url(${(props) => props.src});
   background-size: cover;
   background-position: center;
   margin-top: 20px;
 `;
+
+export const SendMsgBtn = styled.div`
+  font-weight: 900px;
+  text-transform: uppercase;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  letter-spacing: 3px;
+  background-color:  #202120;
+  color: #fff;
+  cursor: pointer;
+`
