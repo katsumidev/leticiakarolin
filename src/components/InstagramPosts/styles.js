@@ -4,10 +4,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
   padding: 100px 0;
   align-items: center;
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 
   h1 {
     font-size: 45pt;
@@ -31,6 +30,13 @@ export const MainTitle = styled.div`
   h4 {
     text-transform: uppercase;
     font-size: 10pt;
+    
+  }
+
+  @media (max-width: 700px) {
+    h4 {
+      max-width: 80%;
+    }
   }
 `;
 
@@ -39,9 +45,14 @@ export const PostsRow = styled.div`
   flex-direction: row;
   width: 90%;
   justify-content: center;
-  height: 100vh;
   margin-top: 150px;
   position: relative;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
 `;
 
 export const InstaPostImg = styled.div`
@@ -74,6 +85,27 @@ export const InstaPostImg = styled.div`
         left: 10%;
         transform: rotate(5deg);
       }
+
+      @media (max-width: 1000px) {
+        h1 {
+          font-size: 30pt;
+          bottom: -25%;
+          left: 15%;
+        }
+      }
+
+      @media (max-width: 700px) {
+        position: relative;
+        transform: rotate(10deg);
+        margin-right: 0;
+
+        h1 {
+          top: 0;
+          font-size: 35pt;
+          left: -10%;
+          transform: rotate(-5deg);
+        }
+      }
     `}
 
   ${(props) =>
@@ -94,6 +126,26 @@ export const InstaPostImg = styled.div`
         left: 20%;
         top: -20%;
         transform: rotate(0deg);
+      }
+
+      @media (max-width: 1000px) {
+        h1 {
+          font-size: 30pt;
+          left: 25%;
+          top: -25%;
+        }
+      }
+
+      @media (max-width: 700px) {
+        position: relative;
+        transform: rotate(-2deg);
+
+        h1 {
+          top: -15%;
+          font-size: 35pt;
+          right: -50%;
+          transform: rotate(10deg);
+        }
       }
     `}
 
@@ -117,5 +169,38 @@ export const InstaPostImg = styled.div`
         right: 10%;
         transform: rotate(-5deg);
       }
+
+      @media (max-width: 1000px) {
+        h1 {
+          font-size: 30pt;
+          bottom: -25%;
+          right: 15%;
+        }
+      }
+
+      @media (max-width: 700px) {
+        position: relative;
+        right: 0;
+
+        h1 {
+          font-size: 35pt;
+          right: 20%;
+        }
+      }
     `}
+
+    @media (max-width: 1300px) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 700px) {
+    width: 360px;
+    height: 360px;
+  }
 `;

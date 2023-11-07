@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100px;
   padding: 0 50px;
 
@@ -21,11 +21,39 @@ export const Container = styled.div`
     background-color: #fff;
   `}
 
+  ${(props) => props.isOpen && css`
+    background-color: #FBF6EF;
+    box-shadow: none;
+  `}
+
   .title {
     font-family: "LaLuxesScript", sans-serif !important;
     font-size: 35pt;
     text-transform: none;
     font-weight: 600;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    font-family: "LaLuxesScript", sans-serif !important;
+    font-size: 35pt;
+    text-transform: none;
+    font-weight: 600;
+
+    @media (min-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: flex;
+
+    @media (min-width: 1000px) {
+      display: none;
+    }
   }
 
   .icons {
@@ -61,4 +89,51 @@ export const Container = styled.div`
       transition: all .2s;
     }
   }
+
+  @media (max-width: 1000px) {
+    ul {
+      display: none;
+    }
+    .icons {
+      display: none
+    }
+  }
+
 `;
+
+export const MobileMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 40px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  animation: fadeIn 0.5s;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  transition: all 0.1s;
+  background-color: #FBF6EF;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      height: 0px;
+      transform: translateY(
+        -100%
+      ); /* Adicione esta linha para animar o translateY */
+    }
+    to {
+      opacity: 1;
+      height: 100vh;
+      transform: translateY(
+        0%
+      ); /* Adicione esta linha para animar o translateY */
+    }
+  }
+`

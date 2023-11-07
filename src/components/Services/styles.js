@@ -3,9 +3,9 @@ import personal1 from "../../assets/img/personal1.jpeg";
 import aesthetic2 from "../../assets/img/aesthetic_two.jpg";
 
 export const FullWrapper = styled.div`
-    display: flex;
-    position: relative;
-`
+  display: flex;
+  position: relative;
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -25,6 +25,17 @@ export const Container = styled.div`
     height: 1px;
     background-color: #000;
   }
+
+  @media (max-width: 1500px) {
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 `;
 
 export const LeftWrapper = styled.div`
@@ -33,6 +44,11 @@ export const LeftWrapper = styled.div`
   max-width: 600px;
   gap: 20px;
   margin-top: 7%;
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+    font-size: 16pt;
+  }
 `;
 
 export const MainImg = styled.div`
@@ -43,15 +59,30 @@ export const MainImg = styled.div`
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 100%;
     height: 70%;
-    transition: all .2s;
+    transition: all 0.2s;
     position: absolute;
     left: -20px;
     bottom: -20px;
     z-index: -1;
     border: 2px solid #000;
+  }
+
+  @media (max-width: 1500px) {
+    height: 500px;
+    width: 80%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+
+    &::before {
+      left: -10px;
+      bottom: -10px;
+      height: 95%;
+    }
   }
 `;
 
@@ -61,6 +92,12 @@ export const RightWrapper = styled.div`
   justify-content: flex-start;
   max-width: 600px;
   gap: 20px;
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+    font-size: 16pt;
+    margin-top: 60%;
+  }
 `;
 
 export const SecundaryImg = styled.div`
@@ -71,16 +108,31 @@ export const SecundaryImg = styled.div`
   margin: 30px 0;
   position: relative;
 
+  @media (max-width: 1500px) {
+    height: 500px;
+    width: 80%;
+  }
+
   &::before {
-    content: '';
+    content: "";
     width: 100%;
     height: 70%;
-    transition: all .2s;
+    transition: all 0.2s;
     position: absolute;
     right: -20px;
     top: -20px;
     z-index: -1;
     border: 2px solid #000;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+
+    &::before {
+      right: -10px;
+      top: -10px;
+      height: 95%;
+    }
   }
 `;
 
@@ -91,10 +143,10 @@ export const TertiaryImg = styled.div`
 `;
 
 export const Background = styled.div`
-    background-color: #CFB8A2;
-    width: 100%;
-    height: 45%;
-    z-index: -999;
-    position: absolute;
-    bottom: 0;
-`
+  background-color: #cfb8a2;
+  width: 100%;
+  height: 45%;
+  z-index: -999;
+  position: absolute;
+  bottom: 0;
+`;

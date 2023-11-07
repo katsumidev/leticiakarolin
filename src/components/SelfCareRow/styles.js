@@ -22,6 +22,10 @@ export const Container = styled.div`
     height: 1px;
     background-color: #F8F4EF;
   }
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
 `;
 
 export const MainRow = styled.div`
@@ -31,6 +35,10 @@ export const MainRow = styled.div`
     width: 70%;
     margin-top: 40px;
     gap: 30px;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
 `
 
 export const Item = styled.div`

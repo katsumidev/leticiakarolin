@@ -6,8 +6,11 @@ import {
   PictureWrapper,
   HeroBackground,
   LearnBtn,
+  SecundaryPicture,
+  InImage
 } from "./styles";
 import mainPic from "../../assets/img/personal5.jpeg";
+import secundaryPic from "../../assets/img/personal10.jpeg"
 
 function Hero() {
   return (
@@ -26,6 +29,10 @@ function Hero() {
           </h2>
           <LearnBtn>Saiba Mais</LearnBtn>
         </div>
+        <SecundaryPicture>
+          <InImage src={secundaryPic} />
+          <h1>Vamos trabalhar juntos!</h1>
+        </SecundaryPicture>
         <HeroBackground />
       </PictureWrapper>
       <div className="main-background"></div>

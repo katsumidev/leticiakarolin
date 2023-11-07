@@ -5,7 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
-    min-width: 500px;
+    min-width: 100%;
 
     p {
         font-weight: 700;
