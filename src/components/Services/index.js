@@ -11,9 +11,10 @@ import {
 } from "./styles";
 import Title from "../Title";
 
-function Services() {
+function Services({refs}) {
   return (
     <FullWrapper>
+        <span ref={refs} />
       <Container>
         <LeftWrapper>
           <h1 className="written-title">Análise Transacional</h1>

@@ -13,23 +13,28 @@ export const Container = styled.div`
   background-color: transparent;
   top: 0;
   z-index: 999999;
-  transition: all .2s;
+  transition: all 0.2s;
 
-  ${(props) => props.isFixed && css`
-    height: 80px;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    background-color: #fff;
-  `}
+  ${(props) =>
+    props.isFixed &&
+    css`
+      height: 80px;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      background-color: #fff;
+    `}
 
-  ${(props) => props.isOpen && css`
-    background-color: #FBF6EF;
-    box-shadow: none;
-  `}
+  ${(props) =>
+    props.isOpen &&
+    css`
+      background-color: #fbf6ef;
+      box-shadow: none;
+    `}
 
   .title {
     font-family: "LaLuxesScript", sans-serif !important;
     font-size: 35pt;
     text-transform: none;
+    cursor: pointer;
     font-weight: 600;
 
     @media (max-width: 1000px) {
@@ -38,10 +43,10 @@ export const Container = styled.div`
   }
 
   .logo {
-    font-family: "LaLuxesScript", sans-serif !important;
-    font-size: 35pt;
+    width: 50px;
     text-transform: none;
     font-weight: 600;
+    cursor: pointer;
 
     @media (min-width: 1000px) {
       display: none;
@@ -74,19 +79,19 @@ export const Container = styled.div`
     gap: 30px;
     text-transform: uppercase;
     font-weight: 900;
-    font-family: 'Brandon Bold';
+    font-family: "Brandon Bold";
 
     :hover {
-        transform: scale(1.1);
-        margin: 0 30px;
-      }
+      transform: scale(1.1);
+      margin: 0 30px;
+    }
 
     li {
       cursor: pointer;
       padding: 0px;
       margin: 0px;
       height: fit-content;
-      transition: all .2s;
+      transition: all 0.2s;
     }
   }
 
@@ -95,10 +100,9 @@ export const Container = styled.div`
       display: none;
     }
     .icons {
-      display: none
+      display: none;
     }
   }
-
 `;
 
 export const MobileMenu = styled.div`
@@ -118,7 +122,19 @@ export const MobileMenu = styled.div`
   animation-play-state: running;
   animation-fill-mode: both;
   transition: all 0.1s;
-  background-color: #FBF6EF;
+  background-color: #fbf6ef;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 20px 0;
+      font-size: 30pt;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+  }
 
   @keyframes fadeIn {
     from {
@@ -136,4 +152,4 @@ export const MobileMenu = styled.div`
       ); /* Adicione esta linha para animar o translateY */
     }
   }
-`
+`;

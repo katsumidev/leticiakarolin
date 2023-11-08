@@ -4,9 +4,13 @@ import aesthetic_3 from "../../assets/img/aesthetic_six.jpg";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 200px 0;
+  margin: 100px 0;
   width: 100vw;
-  height: 100vh;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -30,6 +34,14 @@ export const LeftContainer = styled.div`
     top: 0;
     left: 0;
   }
+
+  @media (max-width: 1000px) {
+    width: 80%;
+
+    &::before {
+      display: none;
+    }
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -38,7 +50,10 @@ export const RightContainer = styled.div`
   width: 50%;
   justify-content: flex-start;
   align-items: center;
-  height: 120%;
+
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
 `;
 
 export const Form = styled.div`
@@ -46,6 +61,11 @@ export const Form = styled.div`
   flex-direction: column;
   width: 70%;
   gap: 50px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+
+  }
 `;
 
 export const Input = styled.div`
@@ -86,7 +106,18 @@ export const DoubleRow = styled.div`
     width: 100%;
 `;
 
-export const MainWrapper = styled.div``;
+export const MainWrapper = styled.div`
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 0;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+`;
 
 export const Infos = styled.ul`
   display: flex;
@@ -120,6 +151,10 @@ export const Image = styled.div`
   background-size: cover;
   background-position: center;
   margin-top: 20px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 export const SendMsgBtn = styled.div`

@@ -28,6 +28,15 @@ export const Container = styled.div`
         font-size: 50pt;
         font-weight: 500;
     }
+
+    @media (max-width: 500px) {
+        height: auto;
+        padding: 50px 0;
+
+        h2 {
+            font-size: 40pt;
+        }
+    }
 `;
 
 export const ContactBtn = styled.div`
@@ -40,4 +49,9 @@ export const ContactBtn = styled.div`
     padding: 20px;
     font-weight: 900;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+        padding: 15px;
+    }
+
 `

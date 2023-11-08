@@ -8,11 +8,12 @@ import {
 } from "./styles";
 import Title from "../Title";
 
-function About() {
+function About({ refs }) {
   return (
     <Container>
       <MainWrapper>
         <TextContainer>
+          <span ref={refs} />
           <Title title="Sobre Mim" position="01" />
           <p>
             Olá, sou Leticia Karoline, Psicóloga Clínica (CRP: 04/62318),
@@ -20,6 +21,7 @@ function About() {
             remoto/online para adultos e adolescentes, e minha abordagem central
             é a Análise Transacional.
           </p>
+
           <p>
             A jornada de autoconhecimento e autodescoberta é um passo importante
             em direção à saúde mental e ao bem-estar. Ao olhar para quem somos e

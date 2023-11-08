@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  padding: 100px 0;
+  padding: 80px 0;
   align-items: center;
   margin-bottom: 80px;
 
@@ -176,6 +176,8 @@ export const InstaPostImg = styled.div`
           bottom: -25%;
           right: 15%;
         }
+
+        background-position: 0 -100px;
       }
 
       @media (max-width: 700px) {
@@ -202,5 +204,10 @@ export const InstaPostImg = styled.div`
   @media (max-width: 700px) {
     width: 360px;
     height: 360px;
+  }
+
+  @media (max-width: 500px) {
+    width: 320px;
+    height: 320px;
   }
 `;

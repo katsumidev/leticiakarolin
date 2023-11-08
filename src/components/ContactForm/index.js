@@ -16,9 +16,10 @@ import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import picture4 from "../../assets/img/personal4.jpeg";
 
-function ContactForm() {
+function ContactForm({refs}) {
   return (
     <Container>
+      <span ref={refs}/>
       <LeftContainer>
         <MainWrapper>
           <Title title="Contato" position="03" />

@@ -149,4 +149,8 @@ export const Background = styled.div`
   z-index: -999;
   position: absolute;
   bottom: 0;
+
+  @media (max-width: 1000px) {
+    height: 30%;
+  }
 `;

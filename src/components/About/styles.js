@@ -8,10 +8,11 @@ export const Container = styled.div`
   flex-direction: row;
   width: 100vw;
   justify-content: space-between;
-  padding: 100px 0;
+  padding-bottom: 100px;
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    padding: 100px 0;
   }
 `;
 

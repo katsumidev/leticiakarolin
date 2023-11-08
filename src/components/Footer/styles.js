@@ -10,8 +10,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     font-weight: 500;
+  text-align: center;
 
   p {
     color: #fff;
+    max-width: 80%;
   }
 `;

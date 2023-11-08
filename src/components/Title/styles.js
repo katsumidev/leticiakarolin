@@ -24,7 +24,7 @@ export const TitleWrapper = styled.div`
 
     h1 {
         text-transform: uppercase;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         white-space: nowrap;
     }
 
