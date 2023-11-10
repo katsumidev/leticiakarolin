@@ -56,7 +56,7 @@ export const RightContainer = styled.div`
   }
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -78,6 +78,15 @@ export const Input = styled.div`
   }
 
   input {
+    padding: 15px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+  }
+
+  select {
     padding: 15px 0;
     width: 100%;
     outline: none;
@@ -157,7 +166,7 @@ export const Image = styled.div`
   }
 `;
 
-export const SendMsgBtn = styled.div`
+export const SendMsgBtn = styled.button`
   font-weight: 900px;
   text-transform: uppercase;
   padding: 20px;
@@ -167,4 +176,8 @@ export const SendMsgBtn = styled.div`
   background-color:  #202120;
   color: #fff;
   cursor: pointer;
+
+  img {
+    width: 50px;
+  }
 `

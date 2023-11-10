@@ -29,7 +29,7 @@ function Hero({ refs }) {
               Ajudando pessoas a encontrarem o equilíbrio e o bem-estar por meio
               da psicoterapia.
             </h2>
-            <LearnBtn>Saiba Mais</LearnBtn>
+            {/* <LearnBtn>Saiba Mais</LearnBtn> */}
           </div>
           <SecundaryPicture>
             <InImage src={secundaryPic} />

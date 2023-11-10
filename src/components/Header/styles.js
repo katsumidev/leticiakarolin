@@ -69,6 +69,7 @@ export const Container = styled.div`
     svg {
       cursor: pointer;
     }
+
   }
 
   ul {
@@ -114,7 +115,7 @@ export const MobileMenu = styled.div`
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 999;
+  z-index: 99999;
   left: 0;
   top: 0;
   opacity: 0;
@@ -134,6 +135,17 @@ export const MobileMenu = styled.div`
       text-transform: uppercase;
       font-weight: 900;
     }
+
+    .icons-mobile {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
   }
 
   @keyframes fadeIn {
